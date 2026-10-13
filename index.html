@@ -14,6 +14,50 @@
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional inline styles for new navigation if needed */
+    .main-nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .main-nav a {
+      font-size: 0.95rem;
+      color: var(--color-text);
+      font-weight: 500;
+    }
+    .main-nav a:hover {
+      color: var(--color-coral);
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+    }
+
+    .content-section {
+      margin-bottom: 2rem;
+    }
+    .content-section h3 {
+      margin-top: 1.5rem;
+      color: var(--color-coral);
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: var(--color-card-bg);
+      border-radius: 8px;
+      border-left: 4px solid var(--color-teal);
+    }
+    .faq-item h4 {
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,8 +71,15 @@
       </svg>
       BlaBlaRide
     </a>
-    <nav aria-label="Hauptnavigation">
+    <nav class="main-nav" aria-label="Hauptnavigation">
       <a href="#so-gehts">So geht's</a>
+      <a href="#fahrer">Für Fahrer</a>
+      <a href="#mitfahrer">Für Mitfahrer</a>
+      <a href="#kosten">Kosten teilen</a>
+      <a href="#rechner">Rechner</a>
+      <a href="#umwelt">Umwelt & CO₂</a>
+      <a href="#versicherung">Versicherung</a>
+      <a href="#faq">FAQ</a>
     </nav>
   </header>
 
@@ -68,6 +119,21 @@
           <p>Teilt euch die Kosten direkt bei der Fahrt. Lerne tolle Menschen kennen, vertreibe dir die Zeit und schone nebenbei noch die Umwelt.</p>
         </div>
       </div>
+    </section>
+
+    <section id="fahrer" class="content-section">
+      <h2>Für Fahrer: Warum Plätze anbieten?</h2>
+      <p>Als Fahrer hast du oft noch leere Plätze im Auto, wenn du zur Arbeit pendelst oder am Wochenende in die Heimat fährst. Warum diese Plätze nicht nutzen? Wenn du Mitfahrer mitnimmst, reduzierst du nicht nur deine eigenen Reisekosten erheblich, sondern tust auch aktiv etwas gegen die vielen Staus auf unseren Straßen und den unnötigen CO₂-Ausstoß. Es ist zudem eine wunderbare Gelegenheit, interessante Gespräche zu führen und die Fahrtzeit gefühlt zu verkürzen. Wichtig ist, dass du dein Profil gut pflegst, pünktlich an vereinbarten Treffpunkten erscheinst und einen sicheren Fahrstil pflegst, damit sich deine Mitfahrer wohlfühlen.</p>
+    </section>
+
+    <section id="mitfahrer" class="content-section">
+      <h2>Für Mitfahrer: Bequem und günstig reisen</h2>
+      <p>Für Mitfahrer bietet sich eine unschlagbar günstige Alternative zu teuren Zugtickets oder Fernbussen. Du reist oft flexibler und kommst manchmal sogar direkter ans Ziel, besonders wenn es in ländlichere Regionen geht. Um eine angenehme Fahrt für alle zu gewährleisten, solltest du flexibel bei der genauen Abholzeit sein, dein Gepäck realistisch ankündigen und den ausgemachten Kostenbeitrag passend dabei haben. Pünktlichkeit ist das A und O einer guten Fahrgemeinschaft. Respektiere außerdem, wenn der Fahrer während der Fahrt lieber Ruhe hat oder sich konzentrieren muss.</p>
+    </section>
+
+    <section id="kosten" class="content-section">
+      <h2>Kosten fair teilen: Worauf man achten sollte</h2>
+      <p>Die Grundidee einer Fahrgemeinschaft ist das Teilen der tatsächlichen Fahrtkosten. Es geht nicht darum, Gewinn zu machen – das wäre rechtlich und steuerlich ohnehin problematisch. Aber wie berechnet man das fair? Eine gängige Methode ist, den Benzinverbrauch pro 100 km, die Streckenlänge und den aktuellen Spritpreis als Basis zu nehmen. Das Ergebnis wird dann einfach durch die Anzahl der Personen im Auto geteilt. Wichtig: Vergesst nicht, zusätzliche direkte Kosten wie Mautgebühren (insbesondere im Ausland), Fährkosten oder unumgängliche Parkgebühren am Zielort mit in die Rechnung aufzunehmen. Verschleiß und Wertverlust des Autos trägt meistens der Fahrer, weshalb manche einen kleinen Pauschalaufschlag für die Wartung fair finden. Einigt euch auf jeden Fall vor Fahrtantritt auf den genauen Betrag!</p>
     </section>
 
     <section id="rechner">
@@ -113,6 +179,17 @@
       </div>
     </section>
 
+    <section id="umwelt" class="content-section">
+      <h2>Umwelt & CO₂: Unser Impact</h2>
+      <p>Jedes Auto weniger auf der Straße ist ein direkter Gewinn für die Umwelt. Wenn sich drei Personen ein Auto teilen, anstatt jeder einzeln zu fahren, werden sofort zwei Drittel der potenziellen Emissionen für diese Strecke eingespart. Für unseren Rechner nutzen wir eine standardisierte und leicht verständliche Annahme: Die Verbrennung von einem Liter Benzin erzeugt durchschnittlich etwa 2,3 Kilogramm CO₂. Wenn du also eine Strecke von 500 km fährst, bei einem Verbrauch von 7 Litern, verbrennst du 35 Liter. Das entspricht gut 80 kg CO₂. Nimmst du drei Mitfahrer mit, die sonst selbst gefahren wären, spart ihr gemeinsam über 240 kg CO₂ ein. Das entspricht ungefähr dem CO₂-Speichervermögen von fast 20 Bäumen in einem ganzen Jahr! Fahrgemeinschaften sind somit eine der effektivsten und unkompliziertesten Methoden für jeden Einzelnen, sofort etwas für den Klimaschutz zu tun.</p>
+    </section>
+
+    <section id="versicherung" class="content-section">
+      <h2>Versicherung & Haftpflicht in Deutschland</h2>
+      <p>Eine der häufigsten Sorgen bei Fahrgemeinschaften betrifft die Versicherung. Die gute Nachricht: In Deutschland ist das Mitnehmen von Personen sehr sicher geregelt. Jeder Mitfahrer ist automatisch über die Kfz-Haftpflichtversicherung des Fahrers bzw. des Fahrzeughalters abgesichert. Kommt es zu einem Unfall, übernimmt diese Versicherung die Personenschäden der Insassen. Es ist also keine spezielle "Insassenunfallversicherung" nötig. </p>
+      <p><strong>Wichtige Bedingung:</strong> Dies gilt nur, solange es sich um eine private Fahrgemeinschaft handelt. Das bedeutet, es findet <em>keine gewerbliche Personenbeförderung</em> statt. Die Kostenteilung darf lediglich die tatsächlichen Betriebskosten (Sprit, Maut, etwas Verschleiß) decken. Sobald der Fahrer versucht, mit der Fahrt einen echten finanziellen Gewinn zu erzielen, greifen die strengen Regeln des Personenbeförderungsgesetzes, und die normale Kfz-Haftpflicht könnte im Ernstfall die Leistung verweigern oder Regress fordern. Bleibt fair und teilt nur die echten Kosten!</p>
+    </section>
+
     <section id="sicherheit">
       <h2>Sicherheit & Tipps</h2>
       <p>Deine Sicherheit und ein angenehmes Erlebnis stehen für uns an erster Stelle. Hier ein paar grundlegende Tipps für Fahrer und Mitfahrer:</p>
@@ -124,16 +201,29 @@
       </ul>
     </section>
 
+    <section id="faq" class="content-section">
+      <h2>Häufig gestellte Fragen (FAQ)</h2>
+      <div class="faq-item">
+        <h4>Was mache ich, wenn mein Fahrer/Mitfahrer nicht auftaucht?</h4>
+        <p>Wartet fairerweise etwa 15 Minuten. Versucht, euch telefonisch zu erreichen. Sollte niemand erscheinen, bleibt euch leider nichts anderes übrig, als allein zu fahren (als Fahrer) oder eine alternative Reisemöglichkeit zu suchen (als Mitfahrer).</p>
+      </div>
+      <div class="faq-item">
+        <h4>Darf ich mein Haustier mitnehmen?</h4>
+        <p>Das obliegt allein der Entscheidung des Fahrers. Kläre unbedingt vor der verbindlichen Zusage ab, ob Tiere im Auto erlaubt sind und ob ausreichend Platz für eine sichere Transportbox vorhanden ist.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Wie wird das Gepäck geregelt?</h4>
+        <p>Standardmäßig gehen die meisten Fahrer von einem normal großen Koffer und etwas Handgepäck aus. Hast du Sperrgepäck wie Ski, Fahrräder oder Instrumente, musst du das unbedingt vorab mit dem Fahrer klären, da der Kofferraumplatz oft begrenzt ist.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Muss ich mich beim Fahren unterhalten?</h4>
+        <p>Nein, es gibt keine Unterhaltungspflicht. Manche schlafen gern, lesen oder hören Musik. Ein kurzes "Hallo" und die Klärung, ob ein Pläuschchen gewünscht ist oder nicht, sorgt schnell für klare Verhältnisse und entspannte Stimmung im Auto.</p>
+      </div>
+    </section>
+
     <section id="newsletter" class="hero" style="border-radius: 3rem; margin-top: 2rem;">
       <h2>Bald verfügbar!</h2>
-      <p>Wir arbeiten noch fleißig an BlaBlaRide. Möchtest du erfahren, sobald wir starten?</p>
-      <div class="newsletter">
-        <form action="#" method="get" onsubmit="event.preventDefault(); alert('Dies ist eine Konzeptseite. Es werden keine Daten gespeichert.');">
-          <label for="email-input" class="visually-hidden" style="display:none;">E-Mail Adresse</label>
-          <input type="email" id="email-input" placeholder="Deine E-Mail Adresse" required aria-label="E-Mail Adresse">
-          <button type="submit" class="btn">Benachrichtigen</button>
-        </form>
-      </div>
+      <p>Wir arbeiten noch fleißig an BlaBlaRide. Diese Website ist aktuell noch eine Konzeptseite. Schau bald wieder vorbei, um keine Neuigkeiten zu verpassen, wenn wir offiziell starten!</p>
     </section>
 
   </main>
@@ -143,7 +233,7 @@
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </nav>
-    <p>&copy; 2023 BlaBlaRide. Dies ist eine Konzeptseite.</p>
+    <p>&copy; 2026 BlaBlaRide. Dies ist eine Konzeptseite.</p>
   </footer>
 
   <script src="script.js"></script>
