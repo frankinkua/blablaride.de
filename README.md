@@ -9,3 +9,13 @@ A concept landing page for a friendly carpooling idea: how sharing rides works, 
 Cheerful and social: sunny coral and teal on white, chunky rounded headings, playful road/route line illustrations in SVG.
 
 Repo: https://github.com/frankinkua/blablaride.de
+
+## Project Structure
+- `index.html`: Main landing page with an interactive cost-split calculator.
+- `impressum.html`: Standard German Impressum template.
+- `datenschutz.html`: Privacy policy stating no tracking is used.
+- `404.html`: Custom 404 error page.
+- `style.css`: Theme styles including dark mode and responsiveness.
+- `script.js`: Offline logic for the cost and CO2 calculator.
+- `favicon.svg`: Inline SVG favicon.
+- `robots.txt` / `sitemap.xml`: Basic SEO files.
